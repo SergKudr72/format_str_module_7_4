@@ -35,6 +35,10 @@ class Team:
     def time_avg(self, other_team_time):
         return self._time + other_team_time
 
+    def all_rezults(self):
+        print(f'Сегодня было решено {team1.tasks_total(team2.score_)} задач, в среднем по '
+              f'{round(team1.time_avg(team2._time) / team1.tasks_total(team2.score_), 2)} секунды на задачу!.')
+
 
 
 
@@ -58,6 +62,6 @@ team2.score_rezult()
 team2.time_score()
 team1.scores_sum(team2.score_)
 team1.challenge_result(team2.name, team2.score_, team2._time)
+team1.all_rezults()
 
-print(f'Сегодня было решено {team1.tasks_total(team2.score_)} задач, в среднем по '
-      f'{round(team1.time_avg(team2._time)/team1.tasks_total(team2.score_), 2)} секунды на задачу!.')
+
